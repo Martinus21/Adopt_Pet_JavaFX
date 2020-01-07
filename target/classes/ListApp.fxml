@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #eecb97;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ListController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="84.0" prefWidth="600.0" text="- DATA ADOPT -" underline="true">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="600.0" text="Nama Adopt" underline="true">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Text fx:id="idDtAdoptName" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Label alignment="CENTER" prefHeight="16.0" prefWidth="600.0" text="data Hewan" underline="true">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="16.0" prefWidth="314.0" text="Jenis Hewan">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Text fx:id="idDtJnsHewan" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                           </children>
+                           <padding>
+                              <Insets top="15.0" />
+                           </padding>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="16.0" prefWidth="300.0" text="Jenis Kelamin">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Text fx:id="idDtJnsKelamin" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                           </children>
+                           <padding>
+                              <Insets top="15.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="96.0" prefWidth="600.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="16.0" prefWidth="601.0" text="Jumlah">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Text fx:id="idDtJumlahHewan" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+               </children>
+            </VBox>
+            <Label text="THANK YOU!">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="idCloseBtn" buttonType="RAISED" onAction="#handleClose" prefHeight="33.0" prefWidth="110.0" style="-fx-background-color: #8c7e7e;" text="CLOSE">
+               <VBox.margin>
+                  <Insets bottom="20.0" top="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Britannic Bold" size="15.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </JFXButton>
+            <HBox alignment="CENTER" prefHeight="26.0" prefWidth="600.0" style="-fx-background-color: #bf382c;">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="122.0" text="by Nabilla ©2019">
+                     <font>
+                        <Font name="Arial" size="13.5" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

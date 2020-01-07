@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="content" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #eecb97;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DataController">
+   <children>
+      <VBox layoutX="7.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="ISI FORM DATA:" textFill="#a15f36">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="250.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label text="1. DATA DIRI">
+               <VBox.margin>
+                  <Insets left="10.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER_LEFT" prefHeight="41.0" prefWidth="600.0">
+               <children>
+                  <Label text="Nama">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Times New Roman" size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="idFieldDtDiriName" focusColor="#9e9898" labelFloat="true" prefWidth="288.0" promptText="Nama">
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="7.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="26.0" prefWidth="600.0">
+               <children>
+                  <Label text="Jenis Kelamin">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Times New Roman" size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXRadioButton fx:id="rbDtDiriPerempuan" text="Perempuan">
+                     <HBox.margin>
+                        <Insets left="45.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="DataDiriGender" />
+                     </toggleGroup>
+                  </JFXRadioButton>
+                  <JFXRadioButton fx:id="rbDtDiriLakiLaki" text="Laki-laki" toggleGroup="$DataDiriGender">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </JFXRadioButton>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="27.0" prefWidth="600.0">
+               <children>
+                  <Label text="Usia">
+                     <font>
+                        <Font name="Times New Roman" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <JFXComboBox fx:id="cBoxDtDiriUsia" prefHeight="25.0" prefWidth="80.0" promptText="0 tahun">
+                     <HBox.margin>
+                        <Insets left="115.0" />
+                     </HBox.margin>
+                  </JFXComboBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <Label text="2. DATA HEWAN ADOPSI">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" top="16.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="600.0">
+               <children>
+                  <Label text="Jumlah Hewan">
+                     <font>
+                        <Font name="Times New Roman" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <JFXTextField fx:id="idDtJumlahHewan" alignment="CENTER" focusColor="#9e9898" labelFloat="true" prefHeight="25.0" prefWidth="40.0" promptText="Qty">
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="7.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="27.0" prefWidth="600.0">
+               <children>
+                  <Label text="Jenis Kelamin">
+                     <font>
+                        <Font name="Times New Roman" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <JFXRadioButton fx:id="rbDtHewanBetina" onAction="#handleRBJnsKelaminHewan" text="Betina">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="57.0" />
+                     </HBox.margin>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="DataHewanGender" />
+                     </toggleGroup>
+                  </JFXRadioButton>
+                  <JFXRadioButton fx:id="rbDtHewanJantan" onAction="#handleRBJnsKelaminHewan" text="Jantan" toggleGroup="$DataHewanGender">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </JFXRadioButton>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label text="Jenis Hewan">
+                     <font>
+                        <Font name="Times New Roman" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <JFXComboBox fx:id="cBoxDtJenisHewan" prefHeight="26.0" prefWidth="120.0" promptText="pilih">
+                     <HBox.margin>
+                        <Insets left="65.0" />
+                     </HBox.margin>
+                  </JFXComboBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="41.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label text="Umur">
+                     <font>
+                        <Font name="Times New Roman" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <JFXComboBox fx:id="cBoxDtUmurHewan" prefHeight="26.0" prefWidth="120.0" promptText="pilih">
+                     <HBox.margin>
+                        <Insets left="115.0" />
+                     </HBox.margin>
+                  </JFXComboBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="600.0">
+               <children>
+                  <JFXToggleButton fx:id="toggleBtn" alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="440.0" size="8.0" text="Tidak Setuju" toggleColor="#11823a" toggleLineColor="#6dc398">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </JFXToggleButton>
+                  <JFXButton fx:id="idBtnDataDone" buttonType="RAISED" onAction="#handleDataDone" prefHeight="29.0" prefWidth="84.0" style="-fx-background-color: #8c7e7e;" text="DONE">
+                     <HBox.margin>
+                        <Insets right="40.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Britannic Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <VBox alignment="CENTER" prefHeight="26.0" prefWidth="600.0" style="-fx-background-color: #bf382c;">
+               <children>
+                  <Label text="by Nabilla ©2019">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Arial" size="13.5" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
